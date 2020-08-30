@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="MEC3-B2B/styles/bootstrap.min.css"/>
+    <link rel="stylesheet" href="MEC3-B2B/styles/main.css"/>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <title>Objednávkový systém MEC 3</title>
+</head>
+<body class="shoping-cart">
+
+<header>
+    <ul class="nav justify-content-center fixed-top navbar-dark bg-dark">
+        <li class="nav-item">
+            <a class="navbar-brand" href="index.html">
+                <img class="" src="MEC3-B2B/media/mec3_logo.png" alt="MEC3">
+            </a>
+        </li>
+    </ul>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" style="">
+        <a class="navbar-brand mr-auto pr-30  d-lg-none" href="homepage.html">Objednávkový systém</a>
+        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse offcanvas-collapse justify-content-center" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <!--<a class="nav-link" href="homepage.html"><i class="fas fa-home"></i></a>-->
+                    <a class="nav-link" href="homepage.html">Domů</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="orders.html">Objednávky</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="technical-sheet.html">Technické listy</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="shopping-cart.html">Košík<span class="badge badge-secondary">49&nbsp;kg</span></a>
+                </li>
+            </ul>
+            <div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <div class="dropdown-select">
+                            <div class="caption nav-link">Odběrné místo</div>
+                            <div class="list">
+                                <a class="dropdown-item" href="#">Odběrné místo Ostrava</a>
+                                <a class="dropdown-item" href="#">Odběrné místo Praha</a>
+                                <a class="dropdown-item" href="#">Odběrné místo</a>
+                                <a class="dropdown-item" href="#">Odběrné místo Brno</a>
+                                <a class="dropdown-item" href="#">Odběrné místo</a>
+                                <a class="dropdown-item" href="#">Odběrné místo Hradec Králové</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Account Name
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <address class="dropdown-item">
+                                <strong>Almeco, s.r.o.</strong><br>
+                                Škvorecká 1803<br>
+                                25082 Úvaly
+                            </address>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Odhlásit</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container main-content">
+    <h2>Obsah košíku</h2>
+    <p class="in-shop-cart pb-4">Množství MEC3: <span>4kg</span></p>
+    <div class="row">
+        <div class="col-12">
+            <!--table-->
+            <table class="table table-xs">
+                <tr>
+                    <th>Kód</th>
+                    <th>Název</th>
+                    <th class="text-right">MJ</th>
+                    <th class="text-right">Množ.</th>
+                    <th></th>
+                </tr>
+                <tr class="item-row">
+                    <td title="Kód">V9I81033</td>
+                    <td valign="middle">
+                        <b><span>BUDDY PANNA COTTA DESSERT 10 x 1 kg</span></b>
+                        <br>
+                        <span>(Min.balení:<span class="red">1,000</span>)</span>
+                    </td>
+                    <td class="text-right" title="MJ">kg</td>
+                    <td class="text-right" title="Množství"><input class="form-control form-control-sm" type="text"
+                                                                   value="350"></td>
+                    <td title="Odstranit z košíku"><a href="#"><i class="fas fa-times red"></i></a></td>
+                </tr>
+                <tr class="item-row item-row-last">
+                    <td title="Kód">13109</td>
+                    <td valign="middle">
+                        <b><span>CUPCAKE CUPS POLKA DOTS - YELLOW (2430ks)</span></b>
+                        <br>
+                        <span>(Min.balení:<span class="red">1,000</span>)</span>
+                    </td>
+                    <td class="text-right" title="MJ">balení</td>
+                    <td class="text-right" title="Množství"><input class="form-control form-control-sm" type="text"
+                                                                   value="350"></td>
+                    <td title="Odstranit z košíku"><a href="#"><i class="fas fa-times red"></i></a></td>
+                </tr>
+                <tr class="item-row item-row-last">
+                    <td title="Kód">257001000</td>
+                    <td valign="middle">
+                        <b><span>KELÍMKY PLASTOVÉ 350 ml - 600ks (138/4T) CRIST</span></b>
+                        <br>
+                        <span>(Min.balení:<span class="red">150,000</span>)</span>
+                    </td>
+                    <td class="text-right" title="MJ">krabička</td>
+                    <td class="text-right" title="Množství"><input class="form-control form-control-sm" type="text"
+                                                                   value="350"></td>
+                    <td title="Odstranit z košíku"><a href="#"><i class="fas fa-times red"></i></a></td>
+                </tr>
+                <tr class="item-row item-row-last">
+
+                    <td title="Kód">V9I81004B4</td>
+                    <td valign="middle">
+                        <b><span>CUPCAKE CUPS POLKA DOTS - GREEN (2430ks)</span></b>
+                        <br>
+                        <span>(Min.balení:<span class="red">150,000</span>)</span>
+                    </td>
+                    <td class="text-right" title="MJ">karton</td>
+                    <td class="text-right" title="Množství"><input class="form-control form-control-sm" type="text"
+                                                                   value="350"></td>
+                    <td title="Odstranit z košíku"><a href="#"><i class="fas fa-times red"></i></a></td>
+                </tr>
+                <tr class="item-row item-row-last">
+                    <td title="Kód">13109</td>
+                    <td valign="middle">
+                        <b><span>CUPCAKE CUPS POLKA DOTS - YELLOW (2430ks)</span></b>
+                        <br>
+                        <span>(Min.balení:<span class="red">1,000</span>)</span>
+                    </td>
+                    <td class="text-right" title="MJ">balení</td>
+                    <td class="text-right" title="Množství"><input class="form-control form-control-sm" type="text"
+                                                                   value="350"></td>
+                    <td title="Odstranit z košíku"><a href="#"><i class="fas fa-times red"></i></a></td>
+                </tr>
+                <tr class="item-row item-row-last">
+                    <td title="Kód">257001000</td>
+                    <td valign="middle">
+                        <b><span>KELÍMKY PLASTOVÉ 3 ml - 600ks (138/4T) CRIST</span></b>
+                        <br>
+                        <span>(Min.balení:<span class="red">150,000</span>)</span>
+                    </td>
+                    <td class="text-right" title="MJ">krabička</td>
+                    <td class="text-right" title="Množství"><input class="form-control form-control-sm" type="text"
+                                                                   value="350"></td>
+                    <td title="Odstranit z košíku"><a href="#"><i class="fas fa-times red"></i></a></td>
+                </tr>
+                <tr class="item-row item-row-last">
+                    <td title="Kód">V9I81004B4</td>
+                    <td valign="middle">
+                        <b><span>CUPCAKE CUPS POLKA DOTS - GREEN (2430ks)</span></b>
+                        <br>
+                        <span>(Min.balení:<span class="red">150,000</span>)</span>
+                    </td>
+                    <td class="text-right" title="MJ">karton</td>
+                    <td class="text-right" title="Množství"><input class="form-control form-control-sm" type="text"
+                                                                   value="350"></td>
+                    <td title="Odstranit z košíku"><a href="#"><i class="fas fa-times red"></i></a></td>
+                </tr>
+            </table>
+            <button type="button" class="btn float-right btn-main">Přepočítat</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-5">
+            <div class="form-group mb-3">
+                <textarea class="form-control mec3-input" id="" rows="5"
+                          placeholder="Vaše poznámka k objednávce"></textarea>
+            </div>
+            <button type="button" class="btn btn-main">Odeslat objednávku</button>
+        </div>
+    </div>
+</div>
+
+<footer class="mt-5 pt-2 bg-light">
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Domů</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Objednávky</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Technické listy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Košík</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Privacy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Terms</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-12 text-center">
+            <p>Copyright © 2019</p>
+        </div>
+    </div>
+    </div>
+</footer>
+
+<script src="MEC3-B2B/scripts/jquery-3.3.1.slim.min.js"></script>
+<script src="MEC3-B2B/scripts/bootstrap.min.js"></script>
+<script src="MEC3-B2B/scripts/main.js"></script>
+</body>
+</html>

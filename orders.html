@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="MEC3-B2B/styles/bootstrap.min.css"/>
+    <link rel="stylesheet" href="MEC3-B2B/styles/main.css"/>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <title>Objednávkový systém MEC 3</title>
+</head>
+<body class="orders">
+
+<header>
+    <ul class="nav justify-content-center fixed-top navbar-dark bg-dark">
+        <li class="nav-item">
+            <a class="navbar-brand" href="index.html">
+                <img class="" src="MEC3-B2B/media/mec3_logo.png" alt="MEC3">
+            </a>
+        </li>
+    </ul>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" style="">
+        <a class="navbar-brand mr-auto pr-30  d-lg-none" href="homepage.html">Objednávkový systém</a>
+        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse offcanvas-collapse justify-content-center" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <!--<a class="nav-link" href="homepage.html"><i class="fas fa-home"></i></a>-->
+                    <a class="nav-link" href="homepage.html">Domů</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="orders.html">Objednávky</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="technical-sheet.html">Technické listy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shopping-cart.html">Košík<span class="badge badge-secondary">49&nbsp;kg</span></a>
+                </li>
+            </ul>
+            <div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <div class="dropdown-select">
+                            <div class="caption nav-link">Odběrné místo</div>
+                            <div class="list">
+                                <a class="dropdown-item" href="#">Odběrné místo Ostrava</a>
+                                <a class="dropdown-item" href="#">Odběrné místo Praha</a>
+                                <a class="dropdown-item" href="#">Odběrné místo</a>
+                                <a class="dropdown-item" href="#">Odběrné místo Brno</a>
+                                <a class="dropdown-item" href="#">Odběrné místo</a>
+                                <a class="dropdown-item" href="#">Odběrné místo Hradec Králové</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Account Name
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <address class="dropdown-item">
+                                <strong>Almeco, s.r.o.</strong><br>
+                                Škvorecká 1803<br>
+                                25082 Úvaly
+                            </address>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Odhlásit</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container main-content">
+    <h2>Historie objednávek</h2>
+    <div class="row">
+        <div class="col-12">
+            <!--table-->
+            <table class="table table-xs">
+                <tr>
+                    <th>Datum</th>
+                    <th>Číslo</th>
+                    <th>Firma</th>
+                    <th>Počet položek</th>
+                    <th></th>
+                </tr>
+                <tr class="item-row">
+                    <td title="Datum">29.12.2018</td>
+                    <td title="Číslo">WEB18568</td>
+                    <td title="Číslo">Almeco, s.r.o.</td>
+                    <td title="Počet položek">5</td>
+                    <td title="Přidat do košíku"><a href="order-detail.html"><i class="fas fa-search-plus"></i></a></td>
+                </tr>
+                <tr class="item-row">
+                    <td title="Datum">29.12.2018</td>
+                    <td title="Číslo">WEB18568</td>
+                    <td title="Číslo">Almeco, s.r.o.</td>
+                    <td title="Počet položek">5</td>
+                    <td title="Přidat do košíku"><a href="order-detail.html"><i class="fas fa-search-plus"></i></a></td>
+                </tr>
+                <tr class="item-row">
+                    <td title="Datum">29.12.2018</td>
+                    <td title="Číslo">WEB18568</td>
+                    <td title="Číslo">Almeco, s.r.o.</td>
+                    <td title="Počet položek">5</td>
+                    <td title="Přidat do košíku"><a href="order-detail.html"><i class="fas fa-search-plus"></i></a></td>
+                </tr>
+                <tr class="item-row">
+                    <td title="Datum">29.12.2018</td>
+                    <td title="Číslo">WEB18568</td>
+                    <td title="Číslo">Almeco, s.r.o.</td>
+                    <td title="Počet položek">5</td>
+                    <td title="Přidat do košíku"><a href="order-detail.html"><i class="fas fa-search-plus"></i></a></td>
+                </tr>
+                <tr class="item-row">
+                    <td title="Datum">29.12.2018</td>
+                    <td title="Číslo">WEB18568</td>
+                    <td title="Číslo">Almeco, s.r.o.</td>
+                    <td title="Počet položek">5</td>
+                    <td title="Přidat do košíku"><a href="order-detail.html"><i class="fas fa-search-plus"></i></a></td>
+                </tr>
+                <tr class="item-row">
+                    <td title="Datum">29.12.2018</td>
+                    <td title="Číslo">WEB18568</td>
+                    <td title="Číslo">Almeco, s.r.o.</td>
+                    <td title="Počet položek">5</td>
+                    <td title="Přidat do košíku"><a href="order-detail.html"><i class="fas fa-search-plus"></i></a></td>
+                </tr>
+                <tr class="item-row item-row-last">
+                    <td title="Datum">29.12.2018</td>
+                    <td title="Číslo">WEB18568</td>
+                    <td title="Číslo">Almeco, s.r.o.</td>
+                    <td title="Počet položek">5</td>
+                    <td title="Přidat do košíku"><a href="order-detail.html"><i class="fas fa-search-plus"></i></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="center-margin">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<footer class="mt-5 pt-2 bg-light">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Domů</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Objednávky</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Technické listy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Košík</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Terms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p>Copyright © 2019</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="MEC3-B2B/scripts/jquery-3.3.1.slim.min.js"></script>
+<script src="MEC3-B2B/scripts/bootstrap.min.js"></script>
+<script src="MEC3-B2B/scripts/main.js"></script>
+</body>
+</html>

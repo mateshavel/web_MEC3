@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="MEC3-B2B/styles/bootstrap.min.css"/>
+    <link rel="stylesheet" href="MEC3-B2B/styles/main.css"/>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+    <title>Objednávkový systém MEC 3</title>
+</head>
+<body class="home">
+
+<header>
+    <ul class="nav justify-content-center fixed-top navbar-dark bg-dark">
+        <li class="nav-item">
+            <a class="navbar-brand" href="index.html">
+                <img class="" src="MEC3-B2B/media/mec3_logo.png" alt="MEC3">
+            </a>
+        </li>
+    </ul>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" style="">
+        <a class="navbar-brand mr-auto pr-30  d-lg-none" href="homepage.html">Objednávkový systém</a>
+        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse offcanvas-collapse justify-content-center" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <!--<a class="nav-link" href="homepage.html"><i class="fas fa-home"></i></a>-->
+                    <a class="nav-link" href="homepage.html">Domů</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="orders.html">Objednávky</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="technical-sheet.html">Technické listy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shopping-cart.html">Košík<span
+                            class="badge badge-secondary">49&nbsp;kg</span></a>
+                </li>
+            </ul>
+            <div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <div class="dropdown-select">
+                            <div class="caption nav-link">Odběrné místo</div>
+                            <div class="list">
+                                <a class="dropdown-item" href="#">Odběrné místo Ostrava</a>
+                                <a class="dropdown-item" href="#">Odběrné místo Praha</a>
+                                <a class="dropdown-item" href="#">Odběrné místo</a>
+                                <a class="dropdown-item" href="#">Odběrné místo Brno</a>
+                                <a class="dropdown-item" href="#">Odběrné místo</a>
+                                <a class="dropdown-item" href="#">Odběrné místo Hradec Králové</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Account Name
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <address class="dropdown-item">
+                                <strong>Almeco, s.r.o.</strong><br>
+                                Škvorecká 1803<br>
+                                25082 Úvaly
+                            </address>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Odhlásit</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container-fluid main-content">
+    <div class="row">
+        <div class="col-12 col-lg-3 box-shadow">
+            <!--filter-->
+            <div class="filter">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="headingOne" role="tab">
+                            <p class="panel-title mb-2">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><i
+                                        class="pull-right fa fa-plus"></i>Oblíbené</a>
+                            </p>
+                        </div>
+                        <div class="panel-collapse collapse in" id="collapseOne" role="tabpanel"
+                             aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <a href="#">Cukrářské směsi</a>
+                                <a href="#">Makarónky</a>
+                                <a href="#">Bavarois</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="headingTwo" role="tab">
+                            <p class="panel-title mb-2">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i
+                                        class="pull-right fa fa-plus"></i>Cocoa &
+                                    Chocolate</a>
+                            </p>
+                        </div>
+                        <div class="panel-collapse collapse" id="collapseTwo" role="tabpanel"
+                             aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <a href="#">Hotové náplně</a>
+                                <a href="#">Modelovací hmoty</a>
+                                <a href="#">Polevy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="headingThree" role="tab">
+                            <p class="panel-title mb-2">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i
+                                        class="pull-right fa fa-plus"></i>Soft ice cream</a>
+                            </p>
+                        </div>
+                        <div class="panel-collapse collapse" id="collapseThree" role="tabpanel"
+                             aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <a href="#">Hotové náplně</a>
+                                <a href="#">Cukrářské směsi</a>
+                                <a href="#">Makarónky</a>
+                                <a href="#">Bavarois</a>
+                                <a href="#">Modelovací hmoty</a>
+                                <a href="#">Polevy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="headingFour" role="tab">
+                            <p class="panel-title mb-2">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseFour" aria-expanded="false" aria-controls="headingFour"><i
+                                        class="pull-right fa fa-plus"></i>Oblíbené</a>
+                            </p>
+                        </div>
+                        <div class="panel-collapse collapse in" id="collapseFour" role="tabpanel"
+                             aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <a href="#">Cukrářské směsi</a>
+                                <a href="#">Makarónky</a>
+                                <a href="#">Bavarois</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="headingFive" role="tab">
+                            <p class="panel-title mb-2">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><i
+                                        class="pull-right fa fa-plus"></i>Cocoa &
+                                    Chocolate</a>
+                            </p>
+                        </div>
+                        <div class="panel-collapse collapse" id="collapseFive" role="tabpanel"
+                             aria-labelledby="headingFive">
+                            <div class="panel-body">
+                                <a href="#">Hotové náplně</a>
+                                <a href="#">Modelovací hmoty</a>
+                                <a href="#">Polevy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="headingSix" role="tab">
+                            <p class="panel-title mb-2">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><i
+                                        class="pull-right fa fa-plus"></i>Soft ice cream</a>
+                            </p>
+                        </div>
+                        <div class="panel-collapse collapse" id="collapseSix" role="tabpanel"
+                             aria-labelledby="headingSix">
+                            <div class="panel-body">
+                                <a href="#">Hotové náplně</a>
+                                <a href="#">Cukrářské směsi</a>
+                                <a href="#">Makarónky</a>
+                                <a href="#">Bavarois</a>
+                                <a href="#">Modelovací hmoty</a>
+                                <a href="#">Polevy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-9">
+            <h2>Přehled zboží</h2>
+            <div class="d-flex flex-wrap justify-content-between">
+                <!--řazení-->
+                <div class="pb-3">
+                    <span class="mr-2">Řadit položky ve skupinách dle:</span>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Názvu
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Kódu
+                        </label>
+                    </div>
+                    <!--<div class="custom-control custom-radio custom-control-inline">-->
+                        <!--<input type="radio" id="customRadioInline1" name="customRadioInline1"-->
+                               <!--class="custom-control-input">-->
+                        <!--<label class="custom-control-label" for="customRadioInline1">Názvu</label>-->
+                    <!--</div>-->
+                    <!--<div class="custom-control custom-radio custom-control-inline">-->
+                        <!--<input type="radio" id="customRadioInline2" name="customRadioInline1"-->
+                               <!--class="custom-control-input">-->
+                        <!--<label class="custom-control-label" for="customRadioInline2">Kódu</label>-->
+                    <!--</div>-->
+                </div>
+                <!--zobrazení-->
+                <div class="pb-2 d-flex ">
+                    <span class="mr-2">Zobrazení:</span>
+                    <ul class="nav nav-pills" id="myTab" role="tablist">
+                        <li>
+                            <a class="display-page active" id="list-tab" data-toggle="tab" href="#list-display"
+                               role="tab" aria-controls="list-display" aria-selected="true">
+                                <i class="fas fa-align-justify pl-1 pr-1"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="display-page" id="cart-tab" data-toggle="tab" href="#cart-display" role="tab"
+                               aria-controls="profile" aria-selected="false">
+                                <i class="fas fa-th pl-1 pr-1"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+            <!--info-->
+            <ul class="list-horizontal list-unstyled">
+                <li><i class="fas fa-cube solomon"></i> - zboží na objednávku</li>
+                <li><i class="fas fa-star gold"></i> - lorem ipsum gold</li>
+                <li><i class="fas fa-star silver"></i> - lorem ipsun silver</li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+                <!--LIST-TAB-->
+                <div class="tab-pane fade show active" id="list-display" role="tabpanel" aria-labelledby="list-tab">
+                    <!--table-->
+                    <p class="table-title">ZMRZLINOVÉ ZÁKLADY</p>
+                    <table class="table table-xs">
+                        <tr>
+                            <th></th>
+                            <th>Kód</th>
+                            <th>Název</th>
+                            <th class="text-right">MJ</th>
+                            <th class="text-right">Množ.</th>
+                            <th></th>
+                        </tr>
+                        <tr class="item-row">
+                            <td>
+                                <i class="fas fa-star silver"></i>
+                                <i class="fas fa-cube solomon"></i>
+                            </td>
+                            <td title="Kód">V9I81033</td>
+                            <td valign="middle">
+                                <b><span>BUDDY PANNA COTTA DESSERT 10 x 1 kg</span></b>
+                                <br>
+                                <span>(Min.balení:<span class="red">1,000</span>)</span>
+                            </td>
+                            <td class="text-right" title="MJ">kg</td>
+                            <td class="text-right" title="Množství">
+                                <input class="form-control form-control-sm" type="text" value="10 500">
+                            </td>
+                            <td title="Přidat do košíku"><a href="#"><i class="fas fa-shopping-cart"></i></a></td>
+                        </tr>
+                        <tr class="item-row item-row-last">
+                            <td><i class="fas fa-star silver"></i></td>
+                            <td title="Kód">13109</td>
+                            <td valign="middle">
+                                <b><span>CUPCAKE CUPS POLKA DOTS - YELLOW (2430ks)</span></b>
+                                <br>
+                                <span>(Min.balení:<span class="red">1,000</span>)</span>
+                            </td>
+                            <td class="text-right" title="MJ">balení</td>
+                            <td class="text-right" title="Množství"><input class="form-control form-control-sm" type="text">
+                            </td>
+                            <td title="Přidat do košíku"><a href="#"><i class="fas fa-shopping-cart"></i></a></td>
+                        </tr>
+                        <tr class="item-row item-row-last">
+                            <td><i class="fas fa-star gold"></i></td>
+                            <td title="Kód">257001000</td>
+                            <td valign="middle">
+                                <b><span>KELÍMKY PLASTOVÉ 350 ml - 600ks (138/4T) CRIST</span></b>
+                                <br>
+                                <span>(Min.balení:<span class="red">150,000</span>)</span>
+                            </td>
+                            <td class="text-right" title="MJ">krabička</td>
+                            <td class="text-right" title="Množství"><input class="form-control form-control-sm" type="text">
+                            </td>
+                            <td title="Přidat do košíku"><a href="#"><i class="fas fa-shopping-cart"></i></a></td>
+                        </tr>
+                        <tr class="item-row item-row-last">
+                            <td><i class="fas fa-star gold"></i></td>
+                            <td title="Kód">V9I81004B4</td>
+                            <td valign="middle">
+                                <b><span>CUPCAKE CUPS POLKA DOTS - GREEN (2430ks)</span></b>
+                                <br>
+                                <span>(Min.balení:<span class="red">150,000</span>)</span>
+                            </td>
+                            <td class="text-right" title="MJ">karton</td>
+                            <td class="text-right" title="Množství"><input class="form-control form-control-sm" type="text">
+                            </td>
+                            <td title="Přidat do košíku"><a href="#"><i class="fas fa-shopping-cart"></i></a></td>
+                        </tr>
+                    </table>
+                    <!--table-->
+                    <p class="table-title">ZLEPŠUJÍCÍ PŘÍPRAVKY</p>
+                    <table class="table table-xs">
+                        <tr>
+                            <th></th>
+                            <th>Kód</th>
+                            <th>Název</th>
+                            <th class="text-right">MJ</th>
+                            <th class="text-right">Množ.</th>
+                            <th></th>
+                        </tr>
+                        <tr class="item-row">
+                            <td>
+                                <i class="fas fa-star silver"></i>
+                                <i class="fas fa-cube solomon"></i>
+                            </td>
+                            <td title="Kód">V9I81033</td>
+                            <td valign="middle">
+                                <b><span>BUDDY PANNA COTTA DESSERT 10 x 1 kg</span></b>
+                                <br>
+                                <span>(Min.balení:<span class="red">1,000</span>)</span>
+                            </td>
+                            <td class="text-right" title="MJ">kg</td>
+                            <td class="text-right" title="Množství"><input class="form-control form-control-sm" type="text">
+                            </td>
+                            <td title="Přidat do košíku"><a href="#"><i class="fas fa-shopping-cart"></i></a></td>
+                        </tr>
+                        <tr class="item-row item-row-last">
+                            <td>
+                                <i class="fas fa-star silver"></i>
+                                <i class="fas fa-cube solomon"></i>
+                            </td>
+                            <td title="Kód">13109</td>
+                            <td valign="middle">
+                                <b><span>CUPCAKE CUPS POLKA DOTS - YELLOW (2430ks)</span></b>
+                                <br>
+                                <span>(Min.balení:<span class="red">1,000</span>)</span>
+                            </td>
+                            <td class="text-right" title="MJ">balení</td>
+                            <td class="text-right" title="Množství"><input class="form-control form-control-sm" type="text">
+                            </td>
+                            <td title="Přidat do košíku"><a href="#"><i class="fas fa-shopping-cart"></i></a></td>
+                        </tr>
+                        <tr class="item-row item-row-last">
+                            <td><i class="fas fa-star gold"></i></td>
+                            <td title="Kód">257001000</td>
+                            <td valign="middle">
+                                <b><span>KELÍMKY PLASTOVÉ 350 ml - 600ks (138/4T) CRIST</span></b>
+                                <br>
+                                <span>(Min.balení:<span class="red">150,000</span>)</span>
+                            </td>
+                            <td class="text-right" title="MJ">krabička</td>
+                            <td class="text-right" title="Množství"><input class="form-control form-control-sm" type="text">
+                            </td>
+                            <td title="Přidat do košíku"><a href="#"><i class="fas fa-shopping-cart"></i></a></td>
+                        </tr>
+                        <tr class="item-row item-row-last">
+                            <td>
+                                <i class="fas fa-star silver"></i>
+                                <i class="fas fa-cube solomon"></i>
+                            </td>
+                            <td title="Kód">V9I81004B4</td>
+                            <td valign="middle">
+                                <b><span>CUPCAKE CUPS POLKA DOTS - GREEN (2430ks)</span></b>
+                                <br>
+                                <span>(Min.balení:<span class="red">150,000</span>)</span>
+                            </td>
+                            <td class="text-right" title="MJ">karton</td>
+                            <td class="text-right" title="Množství"><input class="form-control form-control-sm" type="text">
+                            </td>
+                            <td title="Přidat do košíku"><a href="#"><i class="fas fa-shopping-cart"></i></a></td>
+                        </tr>
+                        <tr class="item-row item-row-last">
+                            <td>
+                                <i class="fas fa-star silver"></i>
+                                <i class="fas fa-cube solomon"></i>
+                            </td>
+                            <td title="Kód">13109</td>
+                            <td valign="middle">
+                                <b><span>CUPCAKE CUPS POLKA DOTS - YELLOW (2430ks)</span></b>
+                                <br>
+                                <span>(Min.balení:<span class="red">1,000</span>)</span>
+                            </td>
+                            <td class="text-right" title="MJ">balení</td>
+                            <td class="text-right" title="Množství"><input class="form-control form-control-sm" type="text">
+                            </td>
+                            <td title="Přidat do košíku"><a href="#"><i class="fas fa-shopping-cart"></i></a></td>
+                        </tr>
+                        <tr class="item-row item-row-last">
+                            <td><i class="fas fa-star gold"></i></td>
+                            <td title="Kód">257001000</td>
+                            <td valign="middle">
+                                <b><span>KELÍMKY PLASTOVÉ 350 ml - 600ks (138/4T) CRIST</span></b>
+                                <br>
+                                <span>(Min.balení:<span class="red">150,000</span>)</span>
+                            </td>
+                            <td class="text-right" title="MJ">krabička</td>
+                            <td class="text-right" title="Množství"><input class="form-control form-control-sm" type="text">
+                            </td>
+                            <td title="Přidat do košíku"><a href="#"><i class="fas fa-shopping-cart"></i></a></td>
+                        </tr>
+                        <tr class="item-row item-row-last">
+                            <td>
+                                <i class="fas fa-star silver"></i>
+                                <i class="fas fa-cube solomon"></i>
+                            </td>
+                            <td title="Kód">V9I81004B4</td>
+                            <td valign="middle">
+                                <b><span>CUPCAKE CUPS POLKA DOTS - GREEN (2430ks)</span></b>
+                                <br>
+                                <span>(Min.balení:<span class="red">150,000</span>)</span>
+                            </td>
+                            <td class="text-right" title="MJ">karton</td>
+                            <td class="text-right" title="Množství"><input class="form-control form-control-sm" type="text">
+                            </td>
+                            <td title="Přidat do košíku"><a href="#"><i class="fas fa-shopping-cart"></i></a></td>
+                        </tr>
+                    </table>
+                </div>
+                <!--GRID-TAB-->
+                <div class="tab-pane fade" id="cart-display" role="tabpanel" aria-labelledby="cart-tab">
+                    <!--grid-->
+                    <p class="table-title">ZMRZLINOVÉ ZÁKLADY</p>
+                    <div class="row">
+                        <!--card-->
+                        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                            <div class="product-card box-shadow">
+                                <div>
+                                    <img class="img-fluid" src="MEC3-B2B/media/blank-img.png" alt="">
+                                </div>
+                                <div class="text-center product-card-text">
+                                    <div class="mb-1">
+                                        <i class="fas fa-star silver"></i>
+                                        <i class="fas fa-cube solomon"></i>
+                                        <i class="fas fa-cube gold"></i>
+                                    </div>
+                                    <p class="bold-text green">PLAIN DARK CHOCOLATE FLAVOUR COATING TYPE “M” CHOCOLATE FLA VOUR</p>
+                                    <p class="mb-1">Kód: <span>257001000</span></p>
+                                    <p class="mb-2">(Min.balení:<span class="red">150,000</span>)</p>
+                                    <input class="form-control form-control-sm mb-3" type="text"><br/>
+                                    <button type="button" class="btn btn-main">Vložit do košíku</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--card-->
+                        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                            <div class="product-card box-shadow">
+                                <div>
+                                    <img class="img-fluid" src="MEC3-B2B/media/blank-img.png" alt="">
+                                </div>
+                                <div class="text-center product-card-text">
+                                    <div class="mb-1">
+                                        <i class="fas fa-star silver"></i>
+                                        <i class="fas fa-cube solomon"></i>
+                                        <i class="fas fa-cube gold"></i>
+                                    </div>
+                                    <p class="bold-text green">PLAIN DARK CHOCOLATE FLAVOUR COATING</p>
+                                    <p class="mb-1">Kód: <span>257001000</span></p>
+                                    <p class="mb-2">(Min.balení:<span class="red">150,000</span>)</p>
+                                    <input class="form-control form-control-sm mb-3" type="text"><br/>
+                                    <button type="button" class="btn btn-main">Vložit do košíku</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--card-->
+                        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                            <div class="product-card box-shadow">
+                                <div>
+                                    <img class="img-fluid" src="MEC3-B2B/media/blank-img.png" alt="">
+                                </div>
+                                <div class="text-center product-card-text">
+                                    <div class="mb-1">
+                                        <i class="fas fa-star silver"></i>
+                                        <i class="fas fa-cube solomon"></i>
+                                        <i class="fas fa-cube gold"></i>
+                                    </div>
+                                    <p class="bold-text green">PLAIN DARK CHOCOLATE</p>
+                                    <p class="mb-1">Kód: <span>257001000</span></p>
+                                    <p class="mb-2">(Min.balení:<span class="red">150,000</span>)</p>
+                                    <input class="form-control form-control-sm mb-3" type="text"><br/>
+                                    <button type="button" class="btn btn-main">Vložit do košíku</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--card-->
+                        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                            <div class="product-card box-shadow">
+                                <div>
+                                    <img class="img-fluid" src="MEC3-B2B/media/blank-img.png" alt="">
+                                </div>
+                                <div class="text-center product-card-text">
+                                    <div class="mb-1">
+                                        <i class="fas fa-star silver"></i>
+                                        <i class="fas fa-cube solomon"></i>
+                                        <i class="fas fa-cube gold"></i>
+                                    </div>
+                                    <p class="bold-text green">PLAIN DARK CHOCOLATE FLAVOUR COATING TYPE “M”</p>
+                                    <p class="mb-1">Kód: <span>257001000</span></p>
+                                    <p class="mb-2">(Min.balení:<span class="red">150,000</span>)</p>
+                                    <input class="form-control form-control-sm mb-3" type="text"><br/>
+                                    <button type="button" class="btn btn-main">Vložit do košíku</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--card-->
+                        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                            <div class="product-card box-shadow">
+                                <div>
+                                    <img class="img-fluid" src="MEC3-B2B/media/blank-img.png" alt="">
+                                </div>
+                                <div class="text-center product-card-text">
+                                    <div class="mb-1">
+                                        <i class="fas fa-star silver"></i>
+                                        <i class="fas fa-cube solomon"></i>
+                                        <i class="fas fa-cube gold"></i>
+                                    </div>
+                                    <p class="bold-text green">PLAIN DARK CHOCOLATE</p>
+                                    <p class="mb-1">Kód: <span>257001000</span></p>
+                                    <p class="mb-2">(Min.balení:<span class="red">150,000</span>)</p>
+                                    <input class="form-control form-control-sm mb-3" type="text"><br/>
+                                    <button type="button" class="btn btn-main">Vložit do košíku</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--card-->
+                        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                            <div class="product-card box-shadow">
+                                <div>
+                                    <img class="img-fluid" src="MEC3-B2B/media/blank-img.png" alt="">
+                                </div>
+                                <div class="text-center product-card-text">
+                                    <div class="mb-1">
+                                        <i class="fas fa-star silver"></i>
+                                        <i class="fas fa-cube solomon"></i>
+                                        <i class="fas fa-cube gold"></i>
+                                    </div>
+                                    <p class="bold-text green">PLAIN DARK CHOCOLATE COATING TYPE “M”</p>
+                                    <p class="mb-1">Kód: <span>257001000</span></p>
+                                    <p class="mb-2">(Min.balení:<span class="red">150,000</span>)</p>
+                                    <input class="form-control form-control-sm mb-3" type="text"><br/>
+                                    <button type="button" class="btn btn-main">Vložit do košíku</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--card-->
+                        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                            <div class="product-card box-shadow">
+                                <div>
+                                    <img class="img-fluid" src="MEC3-B2B/media/blank-img.png" alt="">
+                                </div>
+                                <div class="text-center product-card-text">
+                                    <div class="mb-1">
+                                        <i class="fas fa-star silver"></i>
+                                        <i class="fas fa-cube solomon"></i>
+                                        <i class="fas fa-cube gold"></i>
+                                    </div>
+                                    <p class="bold-text green">PLAIN DARK CHOCOLATE FLAVOUR COATING TYPE “M”</p>
+                                    <p class="mb-1">Kód: <span>257001000</span></p>
+                                    <p class="mb-2">(Min.balení:<span class="red">150,000</span>)</p>
+                                    <input class="form-control form-control-sm mb-3" type="text"><br/>
+                                    <button type="button" class="btn btn-main">Vložit do košíku</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--card-->
+                        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                            <div class="product-card box-shadow">
+                                <div>
+                                    <img class="img-fluid" src="MEC3-B2B/media/blank-img.png" alt="">
+                                </div>
+                                <div class="text-center product-card-text">
+                                    <div class="mb-1">
+                                        <i class="fas fa-star silver"></i>
+                                        <i class="fas fa-cube solomon"></i>
+                                        <i class="fas fa-cube gold"></i>
+                                    </div>
+                                    <p class="bold-text green">DARK CHOCOLATE</p>
+                                    <p class="mb-1">Kód: <span>257001000</span></p>
+                                    <p class="mb-2">(Min.balení:<span class="red">150,000</span>)</p>
+                                    <input class="form-control form-control-sm mb-3" type="text"><br/>
+                                    <button type="button" class="btn btn-main">Vložit do košíku</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="">
+        <div class="d-flex flex-wrap justify-content-center justify-content-md-end align-items-center align-middle">
+            <div class="p-3">
+                <button type="button" class="btn btn-main">Připravit na odeslání</button>
+            </div>
+            <div class="p-3">
+                <a href="shopping-cart.html" class="bold-text"><span>49</span>&nbsp;<span>položek</span></a>
+            </div>
+            <div class="p-3">
+                <p class="in-shop-cart mb-0">Množství MEC3: <span
+                        class="badge badge-secondary text-white">49&nbsp;kg</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="mt-5 pt-2 bg-light">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Domů</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Objednávky</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Technické listy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Košík</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Terms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p>Copyright © 2019</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="MEC3-B2B/scripts/jquery-3.3.1.slim.min.js"></script>
+<script src="MEC3-B2B/scripts/bootstrap.min.js"></script>
+<script src="MEC3-B2B/scripts/main.js"></script>
+</body>
+</html>
